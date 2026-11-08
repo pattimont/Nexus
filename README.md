@@ -29,7 +29,7 @@ Interactive physically based GPU path tracer from scratch written in C++ using C
 - BVH:
    - Standard SAH-based BVH (BVH2) using binned building
    - Compressed-wide BVH (BVH8), see [Ylitie et al. 2017](https://research.nvidia.com/sites/default/files/publications/ylitie2017hpg-paper.pdf). BVH2 is collapsed into an 8-ary BVH. Nodes are compressed to 80 bytes encoding the child nodes' bounding boxes to limit memory bandwidth on the GPU.
-   - GPU builder: implements the H-PLOC algorithm proposed by [Benthin et al. 2024](https://dl.acm.org/doi/10.1145/3675377), a high-performance GPU-oriented BVH construction method. H-PLOC builds high-quality BVHs through hierarchical clustering of spatially nearby primitives. The full algorithm is implemented in my [NexusBVH](https://github.com/StokastX/NexusBVH) library.
+   - GPU builder: implements the H-PLOC algorithm proposed by [Benthin et al. 2024](https://dl.acm.org/doi/10.1145/3675377), a high-performance GPU-oriented BVH construction method. H-PLOC builds high-quality BVHs through hierarchical clustering of spatially nearby primitives. The full algorithm is implemented in my [NexusBVH](https://github.com/pattimont/NexusBVH) library.
 - The BVH is split into two parts: a top level structure (TLAS) and a bottom level structure (BLAS). This allows for multiple instances of the same mesh as well as dynamic scenes using object transforms.
 - Model loader: obj, ply, fbx, gltf with Assimp
 - The material system is based on the [OpenPBR](https://academysoftwarefoundation.github.io/OpenPBR/) model and supports both dielectric and metallic bases. Both bases use the GGX microfacet distribution, see [Walter et al. 2007](https://www.graphics.cornell.edu/~bjw/microfacetbsdf.pdf).
@@ -56,7 +56,7 @@ The project has been tested on both **Windows** (with Visual Studio) and **Ubunt
 1. **Clone the repository with submodules**:
 
    ``` sh
-   git clone --recurse-submodules https://github.com/StokastX/Nexus
+   git clone --recurse-submodules https://github.com/pattimont/Nexus
    ```
 
 2. **Generate the solution via cmake**:

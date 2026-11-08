@@ -1,13 +1,13 @@
 [submodule "PathTracer/vendor/imgui"]
 	path = Nexus/vendor/imgui
-	url = https://github.com/Patoche692/imgui.git
+	url = https://github.com/pattimont/imgui.git
 	branch = docking
 [submodule "PathTracer/vendor/assimp"]
 	path = Nexus/vendor/assimp
-	url = https://github.com/Patoche692/assimp.git
+	url = https://github.com/pattimont/assimp.git
 [submodule "PathTracer/vendor/GLFW"]
 	path = Nexus/vendor/GLFW
-	url = https://github.com/Patoche692/glfw.git
+	url = https://github.com/pattimont/glfw.git
 [submodule "Nexus/vendor/NexusBVH"]
 	path = Nexus/vendor/NexusBVH
-	url = https://github.com/StokastX/NexusBVH.git
+	url = https://github.com/pattimont/NexusBVH.git
